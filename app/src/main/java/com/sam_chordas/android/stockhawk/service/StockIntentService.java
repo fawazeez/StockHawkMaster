@@ -39,7 +39,7 @@ public class StockIntentService extends IntentService {
       new Handler(Looper.getMainLooper()).post(new Runnable() {
         @Override
         public void run() {
-          Toast.makeText(getApplicationContext(), R.string.invalid_Symbol,Toast.LENGTH_SHORT).show();
+          Toast.makeText(getApplicationContext(),"Symbol Entered is not Valid",Toast.LENGTH_SHORT).show();
         }
       });
     }
